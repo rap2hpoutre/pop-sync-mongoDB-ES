@@ -32,7 +32,7 @@ class OPTLOG {
     });
 
     this.oplog.on("error", error => {
-      console.log(error);
+      console.log("error", error);
     });
 
     this.oplog.on("end", () => {

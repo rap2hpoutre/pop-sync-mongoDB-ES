@@ -48,7 +48,7 @@ async function flushBulk() {
     try {
       const res = await es.bulk({ body: bulk });
       if (res.errors) {
-        console.log(res.errors);
+        console.log("res.errors", res, res.errors);
       }
     } catch (e) {
       console.log("ERROR");
