@@ -1,4 +1,4 @@
-// const AWS = require("aws-sdk");
+const AWS = require("aws-sdk");
 const { esUrl } = require("./config.js");
 
 let elasticClient = null;
