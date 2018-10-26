@@ -1,0 +1,50 @@
+{
+  "name": "pop-sync-mongodb-es",
+  "version": "1.0.0",
+  "description": "POP API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js",
+    "dev:env": "nodemon -r dotenv/config ./src/index.js",
+    "start": "node ./src/index.js  ",
+    "deploy:prod": "yarn && eb deploy sync-es-prod",
+    "deploy:staging": "yarn && eb deploy sync-es-prod",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betagouv/pop-sync-mongodb-es.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betagouv/pop-sync-mongodb-es/issues"
+  },
+  "homepage": "https://github.com/betagouv/pop-sync-mongodb-es#readme",
+  "dependencies": {
+    "@sentry/node": "^4.1.1",
+    "asyncawait": "^1.0.6",
+    "aws-sdk": "^2.266.1",
+    "aws4": "^1.8.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "elasticsearch": "^14.2.2",
+    "express": "^4.16.3",
+    "http-aws-es": "^6.0.0",
+    "http-proxy-middleware": "^0.19.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongo-oplog": "^2.1.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "commander": "^2.19.0",
+    "cross-env": "^5.1.6",
+    "inquirer": "^6.2.0",
+    "listr": "^0.14.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "rxjs": "^6.3.3"
+  }
+}

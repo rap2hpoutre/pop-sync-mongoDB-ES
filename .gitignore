@@ -1,0 +1,16 @@
+node_modules
+data
+# Elastic Beanstalk Files
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+errors\.csv
+joconde
+mnr
+upload
+
+\.env
+
+*.log
+
+uploads
